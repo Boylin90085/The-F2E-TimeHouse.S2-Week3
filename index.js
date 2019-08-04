@@ -2,10 +2,11 @@
   const play = document.querySelector('.player__play')
   const pause = document.querySelector('.player__pause')
   const loop = document.querySelector('.player__loop')
+  const loopIcon = document.querySelectorAll('.player__loop-icon')
   const pre = document.querySelector('.player__pre')
   const next = document.querySelector('.player__next')
   const dot = document.querySelector('.player__dot')
-  const album = document.querySelector('.player__album-bg')
+  const album = document.querySelector('.player__album-container')
   const currentTime = document.querySelector('.player__current')
   const durationTime = document.querySelector('.player__duration')
   const audio = new Audio('./audio/god is a woman.mp3')
@@ -43,7 +44,17 @@
   })
 
   loop.addEventListener('click', function () {
-    audio.loop = true
+    audio.loop = !audio.loop
+
+    if (audio.loop) {
+      loopIcon.forEach((i) => {
+        i.style.fill = '#90CEC2'
+      })
+    } else {
+      loopIcon.forEach((i) => {
+        i.style.fill = '#fff'
+      })
+    }
   })
 
   function timeFormat(time) {

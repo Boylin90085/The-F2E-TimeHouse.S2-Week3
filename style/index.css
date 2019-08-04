@@ -32,6 +32,8 @@ header > .fa-chevron-left { font-size: 24px; }
 
 .player__loop-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; margin-bottom: 12px; }
 
+.player__loop-icon { fill: #fff; }
+
 .player__bar { position: relative; height: 5px; background-color: #fff; border-radius: 15px; margin-bottom: 12px; }
 
 .player__bar-container { width: 80%; margin-left: auto; margin-right: auto; }

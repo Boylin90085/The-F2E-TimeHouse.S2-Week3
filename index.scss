@@ -110,6 +110,11 @@ header{
     justify-content: flex-end;
     margin-bottom: 12px;
   }
+  &__loop{
+    &-icon{
+      fill: #fff;
+    }
+  }
   &__bar{
     position: relative;
     height: 5px;
